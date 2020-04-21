@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  test2:
+    image: test2
+    build:
+      context: .
+      dockerfile: WebApplication2/Dockerfile
+    ports:
+      - 80:80
