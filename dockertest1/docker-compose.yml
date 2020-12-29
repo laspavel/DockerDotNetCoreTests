@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+   dockertest1:
+    image: ${DOCKER_REGISTRY-}dockertest1
+    build:
+      context: .
+      dockerfile: dockertest1/Dockerfile
+    ports:
+      - 5000:80
+
